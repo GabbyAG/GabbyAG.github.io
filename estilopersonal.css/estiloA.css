@@ -11,6 +11,7 @@ body{
     background:url(/images/fond.jpg); 
     background-size: cover;
     text-align: center;}
+    
 h1{
     font-family:Georgia, 'Times New Roman', Times, serif}
 h5{
@@ -18,21 +19,45 @@ h5{
     font-weight: bold;
     font-family: cursive;
 
-
-
 }
-footer{
-    text-align: center;
-    color: black;
+h4{
+    font-weight: bold;
+    font-size: 2.0em;
 }
-aside{text-align: center;}
 nav{
     border: 1px solid black;
     display: block;
     background: rgb(7, 7, 7);
     text-align: left;
 }
-article{
-    text-align: justify;
+.seccion{
+  
+    margin: 20px;
+    width: 600px;
+    
 }
-   
+article{
+border: 2px solid black;
+padding: 50px;
+margin-bottom: 15px;
+text-align: justify;
+
+}
+img{
+    
+    display: block;
+    margin: 20px auto;
+
+}
+.art2{
+    
+
+}
+
+.art1{
+    
+}
+
+.art1{
+    
+}
