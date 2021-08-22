@@ -1,21 +1,23 @@
-header{background: rgb(219, 157, 219);border: 1px solid black}
-body{color: white; background: rgb(82, 82, 82)}
+*{
+    
+}
+header{background: rgb(219, 157, 219);border: 1px solid black;text-align: center}
+body{color: white; background: rgb(82, 82, 82); text-align: unset;text-align: center}
 h3{font-family:unset}
 footer{text-align: center;}
-aside{text-align: right;}
+aside{text-align: center;}
 nav{
     border: 1px solid black;
     display: block;
     background: rgb(7, 7, 7);
+    text-align: left;
 }
-
-section{
-    display: inline-block ;
-    margin: 20px;
-    width: 700px;
+article{
+    text-align: justify;
+}
    
 
-}
+
 section{
     border:  1px solid rgb(83, 83, 81);
 }
