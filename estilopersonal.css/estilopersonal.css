@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    background:rgb(25, 89, 126);
+    font-family:Georgia, 'Times New Roman', Times, serif
+  
+
+}
+body{
+    overflow-x: hidden;
+    background: url(/images/fondo.gif);
+    background-size: cover;
+    text-align: center;
+    color: rgb(126, 51, 51);
+    
+  
+}
+nav{
+   background: darkblue;
+}
+article{
+    padding: 50px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+img{
+    display: block;
+    margin: 20px auto;
+    border: rgb(84, 84, 139);
+}
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif}
+h2{
+    color: white;
+    font-weight: bold;
+
+}
+h5{
+    font-size: 0.8em;
+    font-weight: bold;
+    font-family: cursive;
+
+}
+h4{
+    font-weight: bold;
+    font-size: 2.0em;
+}
+
+.redS{
+    position: fixed;
+    right: 0;
+    top: 300px;
+    z-index: 2000;
+}
+.redS ul{
+    list-style: none;
+    padding-left: 0;
+}
+.redS ul li a{
+    display: inline-block;
+    color: rgb(238, 144, 233);
+    background: rgb(61, 53, 53);
+    padding: 10px 15px;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+.facebook{
+    padding: 2.5px;
+}
+.redS ul li a:hover{
+    background: rgb(86, 58, 248);
+    padding: 10px 30px;
+}
+@media screen and (max-width: 900px) {
+    .redS ul li a:hover{
+        background: rgb(86, 58, 248);
+        padding: 10px 15px;
+    }
+}
+footer{
+    background:#34566b;
+    padding: 40px 0 20px 0;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    
+}
+.contenedor{
+    display: flex;
+    width: 100%;
+    text-align: left;
+    align-items: center;
+    justify-content:space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;/*Rayita abajo*/
+}
+article{
+    border: 1px solid rgb(112, 110, 110);
+    color: white;
+}
