@@ -9,7 +9,7 @@ header {
   
 
 }
-body{
+.principal{
     overflow-x: hidden;
     background: url(/images/fondo.gif);
     background-size: cover;
@@ -43,11 +43,11 @@ h5{
     font-weight: bold;
     font-family: cursive;
 
-}
+}/*
 h4{
     font-weight: bold;
     font-size: 2.0em;
-}
+}*/
 
 .redS{
     position: fixed;
@@ -82,6 +82,13 @@ h4{
         padding: 10px 15px;
     }
 }
+@media (max-width:900px){
+    form{
+        width: 100%;
+    }
+    
+
+}
 footer{
     background:#34566b;
     padding: 40px 0 20px 0;
@@ -97,14 +104,146 @@ footer{
     align-items: center;
     justify-content:space-evenly;
     margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;/*Rayita abajo*/
+  
 }
 article{
     border: 1px solid rgb(112, 110, 110);
     color: white;
+    margin: auto;
+    align-items: center;
+    
 }
-@media (max-width:900px){
-    form{
-        width: 100%;
-    }
+.datos{
+    border: 2px solid black;
+}
+/**/
+.Gabby{    
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px; 
+}
+.Contenido{
+    border: 1px solid rgb(8, 8, 8)
+    margin-top: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 7px;
+}
+.uno{
+    display: flex;
+    padding-left: 140px;
+    margin-top: 40px;
+}
+.Nom-Ape{
+    display: flex;
+    margin-bottom: 2px;    
+}
+.apN, .FecHa{
+    border: 1px solid rgb(69, 69, 245);
+    background: #3760da;
+    color: white;
+    padding: 7px;
+    padding-right: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.botones{
+    display: flex;
+    align-items: flex-start;
+}
+#Extraer{
+    background: #e2c628;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 15px;
+    margin-right: 30px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    
+}
+
+#Colorear{
+    background: #c01010;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 15px;
+    margin-right: 30px;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+   
+}
+
+#NomApellidos, #FechaNac{
+    align-self: center;
+    padding: 10px;
+    border: 1px solid rgb(247, 49, 49);
+}
+.primC{
+    display: flex;
+    margin-bottom: 2px;
+}
+.Contenido{
+    background: #5acaa5;
+    padding-top: 30px;
+}
+.primero{
+    padding-right: 240px;
+    padding-bottom: 50px;
+}
+.dos{
+    display: flex;
+    padding-left: 200px;
+    padding-bottom: 50px;
+}
+.primT{
+    display: flex;
+    margin-bottom: 2px;
+}
+.pat,.mat,.nom{
+    border: 1px solid rgb(69, 69, 245);
+    background: #3760da;
+    color: white;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mat{
+    padding-right: 45px;
+}
+#pat{
+    padding-right: 50px;
+}
+#nom{
+    padding-right: 128px;
+}
+#apePaterno, #apeMaterno, #nombres{
+    align-self: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+.tres{
+    padding-left: 80px;
+}
+.L, .E, .M{
+    border: 1px solid rgb(187, 21, 21);
+    background: #bb4e4e;
+    color: white;
+    padding: 7px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Lon, #Edad, #Mes{
+    align-self: center;
+    padding: 10px;
+    border: 1px solid red;
+}
+#L{
+    padding-right: 25px;
+}
+#E{
+    padding-right: 168px;
+}
+#M{
+    padding-right: 96px;
+}  
