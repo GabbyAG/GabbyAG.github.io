@@ -37,6 +37,52 @@
         
             }
             cont += 1;
-        }
+        
     }
+    let btnExtraer =document.getElementById("Extraer");
+    btnExtraer.addEventListener("click", ExtraerDados);
+    function ExtraerDados(){
+        
+       
+        const aN =document.getElementById('NomApellidos');
+        let nA = aN.value;
+        let Nomb = nA.split(/\s+/);
+        const Pater = document.getElementById('apePaterno');
+        Pater.value="";
+        Pater.value=Nomb[0];
+        const Mater = document.getElementById('apeMaterno');
+        Mater.value="";
+        Mater.value=Nomb[1];
+        const Nbs= document.getElementById('nombres');
+        Nbs.value="";
+        for(let i = 2; i< Nomb.length; i++){
+            Nbs.value+=" "+Nomb[i]+ " ";
+        }
+        document.getElementById("Lon").value = ("Longitud de " +(Pater.value+ Mater.value).length + " letras");   
+        let fecN= document.getElementById("FechaNac").value;           
+        let hoy = new Date();
+        let birthday = new Date(fecN);
+        let Edad = hoy.getFullYear() - birthday.getFullYear();
+        let a = (hoy.getMonth()+1) - (birthday.getMonth()+1);
+        console.log( (hoy.getMonth()+1)+"-"+ (birthday.getMonth()+1));
+        if (a < 0) {
+            Edad--;
+        }else if (a==0) {
+            if (hoy.getDate() < birthday.getDate()) {
+                    
+                Edad--;
+            }
+        }            
+
+        document.getElementById("Edad").value=("Su edad es: " +Edad+ " años");            
+        let Months = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio","Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        let f= new Date(birthday);
+        document.getElementById("Mes").value = (Months[f.getMonth()]);
+            
+
+        }
+            
+
+    };
+
 })();
